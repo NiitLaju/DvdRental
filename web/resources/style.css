@@ -15,6 +15,7 @@
     font-size: 17px;
 }
 
+
 /* Add an active class to highlight the current page */
 .active {
     background-color: yellowgreen;
@@ -95,14 +96,8 @@
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-
-    body {
-	background-image: url("Images/Home.jpg");
-                background-repeat: no-repeat;
-                background-size: 100% 1080px;
+  
 	
-}
 .header a.logo {
   font-size: 25px;
   font-weight: bold;

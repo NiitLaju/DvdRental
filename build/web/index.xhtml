@@ -9,156 +9,254 @@
             img{
                 width: 100%;
             }
-              body {
-               background-color: brown;
-              }
+            body {
+                background-color: goldenrod;
+            }
+            * {box-sizing: border-box}
 
+            /* Container needed to position the overlay. Adjust the width as needed */
+            .container {
+                position: relative;
+                width: 80%;
+                max-width: 155px;
+            }
+
+            /* Make the image to responsive */
+            .image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            /* The overlay effect - lays on top of the container and over the image */
+            .overlay {
+                position: absolute; 
+                bottom: 0; 
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.5); /* Black see-through */
+                color: #f1f1f1; 
+                width: 100%;
+                height: 214px;
+                transition: .5s ease;
+                opacity:0;
+                color: white;
+                font-size: 14px;
+               font-family:tahoma;
+                text-align: center;
+            }
+
+            /* When you mouse over the container, fade in the overlay title */
+            .container:hover .overlay {
+                opacity: 1;
+            }
         </style>
     </h:head>
 
     <h:body style="padding: 0px; margin: 0px">
         <div class="header">
-            <a href="#default" class="logo">Dvd Rental</a>
+            <a  class="logo">Dvd Rental</a>
         </div>
         <div class="topnav" id="myTopnav">
 
             <a href="#home" class="active">Home</a>
-            <a href="#About">About us</a>
+            <a href="About.xhtml">About us</a>
             <div class="dropdown">
                 <button class="dropbtn">Sign in 
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
                     <a href="#">Admin</a>
-                    <a href="register.xhtml">Register</a>
+                    <a href="Register.xhtml">Register</a>
 
                 </div>
             </div> 
 
         </div>
         <h1><b><center>Top Movies to Rent</center></b></h1>
-        <marquee ><h1>We Offer The Best Movies To Rent</h1></marquee>
-            <table cellpadding="1.9em" cellspacing="1.0em" width="80%" align="center">
+
+        <marquee bgcolor="yellowgreen"><h1> Welcome to DvdRental, We Offer The Best Movies To Rent, Only  the best  at DvdRental inc</h1>
+        </marquee>
+
+        <table  cellspacing="1.0em" width="80%" align="center">
 
             <tr>
                 <td>
-                    <a href="default.html">
-                        <img src="Images/Coco.jpg"  style="width:154px;height:214px;"></img>  </a>
-                    
+                    <div class="container">
+                        <a href="default.html">
+                            <img src="Images/Coco.jpg"  class="image" style="width:154px;height:214px;"></img> 
+                            <div class="overlay">Coco The Movie Genre : Drama <br/>Animation <br> Rated : PG13</br><p>Price : $40</p></div> </a>
+
+                    </div>        
                 </td>
                 <td>
-                    <a href="default.html">       
-                        <img src="Images/It.jpg"  style="width:154px;height:214px;"></img>  </a>
-                    
+                    <div class="container">
+                        <a href="default.html">       
+                            <img src="Images/It.jpg"  style="width:154px;height:214px;"></img>  
+                            <div class="overlay">Inside Out Genre : Comedy <br/>Animation <br> Rated : PG13</br><p>Price : $45</p></div> </a>
+
+                    </div> 
 
                 </td>
                 <td>
-                    <a href="default.html">       
-                        <img src="Images/Bis.png"  style="width:154px;height:214px;"></img>  </a>
-                    
+                    <div class="container">
+                        <a href="default.html">       
+                            <img src="Images/Bis.png"  style="width:154px;height:214px;"></img>  
+                            <div class="overlay">Blockers<p>Genre : Comedy </p><br/>Movie <br> Rated : 16SL</br><p>Price : $60</p></div> </a>
+
+                    </div>
                 </td>
                 <td>
-                    <a href="default.html">       
-                        <img src="Images/Logan.jpg"  style="width:154px;height:214px;"></img>  </a>
+                    <div class="container">
+                        <a href="default.html">       
+                            <img src="Images/Logan.jpg"  style="width:154px;height:214px;"></img>  
+                            <div class="overlay">Logan<p>Genre : Action </p><br/>Year : 2018 <br> Rated : 16</br><p>Price : $60</p></div></a>
+                    </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="html">       
-                        <img src="Images/Ic2.jpg"  style="width:154px;height:214px;"></img>  </a>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/Ic2.jpg"  style="width:154px;height:214px;"></img> 
+                            <div class="overlay">Incredibles 2 <p/>Genre : Hero <br/>Year : 2018<br/>Your heros are back this time with more action <br> Rated : PG13</br><p>Price : $60</p></div></a>
+                    </div>
                 </td>
                 <td>
-                    <a href="html">       
-                        <img src="Images/Ts3.png"  style="width:154px;height:214px;"></img>  </a>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/Ts3.png"  style="width:154px;height:214px;"></img> 
+                            <div class="overlay">Sweet Country Genre : Western <br/>3 men rob a bank and shit started to happen<br/>Year : 2018<br> Rated : 16</br><p>Price : $60</p></div></a>
+                    </div>
                 </td>
                 <td>
-                    <a href="html">       
-                        <img src="Images/Spy.png"  style="width:154px;height:214px;"></img>  </a>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/Spy.png"  style="width:154px;height:214px;"></img> 
+                            <div class="overlay">Spy<p>Genre : Classifed </p><br/>Year : 2018 <br> Rated : 16</br><p>Price : $60</p></div></a>
+                    </div>
                 </td>
                 <td>
-                    <a href="html">       
-                        <img src="Images/SeS.png" alt="MadMax" style="width:154px;height:214px;"></img>  </a>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/SeS.png"  style="width:154px;height:214px;"></img> 
+                            <div class="overlay">Set It Up<p>Genre : Comedy </p><br/>Year : 2018 <br> Rated : 16</br><p>Price : $60</p></div></a>
+                    </div>
                 </td>
 
 
             </tr>
             <tr>
                 <td>
-                    <a><img src="Images/R1.png"  style="width:154px;height:214px;"></img>  </a>
+                    <div class="container">
+                        <a href="#"><img src="Images/R1.png"  style="width:154px;height:214px;"></img>
+                            <div class="overlay">Ready Player One<p>Genre : Gaming </p><br/>Year : 2018 <br> Rated : 16</br><p>Price : $60</p></div></a>
+                    </div>
                 </td>
                 <td>
-                    <a href="html">       
-                        <img src="Images/movie7.jpg"  style="width:154px;height:214px;"></img>  </a>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/movie7.jpg"  style="width:154px;height:214px;"></img> 
+                            <div class="overlay">Transfomers<p>Genre : Action </p> <br> Rated : 16</br><p>Price : $60</p></div></a>
+                    </div>
                 </td>
                 <td>
-                    <a href="html">       
-                        <img src="Images/Ts.png"  style="width:154px;height:214px;"></img>  </a>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/Ts.png"  style="width:154px;height:214px;"></img>  
+                            <div class="overlay">Escape Plan2<p>Genre :  Action </p><br/>Year : 2018 <br> Rated : 16</br><p>Price : $60</p></div></a>
+                    </div>
                 </td>
                 <td>
-                    <a href="html">       
-                        <img src="Images/movie6.jpg"  style="width:154px;height:214px;"></img>  </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="html">       
-                        <img src="Images/Go.png"  style="width:154px;height:214px;"></img>  </a>
-                </td>
-                <td>
-
-                    <a href="html">       
-                        <img src="Images/Kung.jpg"  style="width:154px;height:214px;"></img>  </a>
-                </td>
-                <td>
-                    <a href="html">       
-                        <img src="Images/BladeRunner.jpg"  style="width:154px;height:214px;"></img>  </a>
-                </td>
-                <td>
-                    <a href="html">       
-                        <img src="Images/Rgh.png"  style="width:154px;height:214px;"></img>  </a>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/movie6.jpg"  style="width:154px;height:214px;"></img> 
+                            <div class="overlay">Ice-Age<p>Genre : Comedy </p><br/>Animation <br> Rated : PG13</br><p>Price : $60</p></div></a>
+                    </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="html">       
-                        <img src="Images/Gh.png" alt="MadMax" style="width:154px;height:214px;"></img>  </a>
-                </td>
-                <td>
-                    <a href="html">       
-                        <img src="Images/Predator.jpg"  style="width:154px;height:214px;"></img>  </a>
-                </td>
-                <td>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/Go.png"  style="width:154px;height:214px;"></img> 
+                            <div class="overlay">GOTTI<p>Biography, Crime, Drama
+                                    Rating: 4.5
+                                    MPAA Rating: R
 
-                    <a href="html">       
-                        <img src="Images/MadMax.jpg" alt="MadMax" style="width:154px;height:214px;"></img>  </a>
+                                    Budget: $10,000,000 
+                                    Gross: $3,567,088
+
+                                    The story of
+                                    crime boss
+                                    John Gotti
+                                    and his son.
+
+                                    Quality: 1080p WEBRip (High)</p></div></a>
+                    </div>
                 </td>
                 <td>
-                    <a href="html">       
-                        <img src="Images/id.png" style="width:154px;height:214px;"></img>  </a>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/Kung.jpg"  style="width:154px;height:214px;"></img>  
+                            <div class="overlay">KungFu Panda<p>Genre : Comedy </p><br/>Animation <br> Rated : PG13</br><p>Price : $40</p></div></a>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/BladeRunner.jpg"  style="width:154px;height:214px;"></img>  
+                            <div class="overlay">BladeRunner<p>Genre : Sci-Fi,Action </p><br/>Year : 2018<br> Rated : 16</br><p>Price : $60</p></div></a>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/Rgh.png"  style="width:154px;height:214px;"></img>
+                            <div class="overlay">Rampage<p>Genre : Action </p><br/>Year : 2018 <br> Rated : 16</br><p>Price : $30</p></div></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/Gh.png"  style="width:154px;height:214px;"></img> 
+                            <div class="overlay">Ghostland<p>Genre : Horror </p><br/>Year : 2018 <br> Rated : 16</br><p>Price : $40</p></div></a>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/Predator.jpg"  style="width:154px;height:214px;"></img>  
+                            <div class="overlay">Predator<p>Genre : Sci-Fi </p><br/>Year : 2018<br> Rated : 16</br><p>Price : $45</p></div></a>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/MadMax.jpg" alt="MadMax" style="width:154px;height:214px;"></img>  
+                            <div class="overlay">MadMax<p>Genre :Sci-Fi </p> <br> Rated : 16 </br><p>Price : $50</p></div></a>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <a href="html">       
+                            <img src="Images/id.png" style="width:154px;height:214px;"></img>  
+                            <div class="overlay">Ideal Home<p>Genre : Drama </p> <br> Rated : 16</br><p>Price : $40</p></div></a>
+                    </div>
                 </td>
             </tr>
             <tr>
             </tr>
         </table>
-              <nav class="pagination">
-        <ul>
-          <li><a href="#">&laquo; Previous</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><strong>&hellip;</strong></li>
-          <li><a href="#">6</a></li>
-          <li class="current"><strong>7</strong></li>
-         
-          <li><a href="#">Next &raquo;</a></li>
-        </ul>
-      </nav>
+
         <footer>
             <div class="inner-footer">
 
                 <div class="wrapper row5">
                     <div id="copyright" class="hoc clear"> 
 
-                        <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Dvd Rental</a></p>
+                        <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="index.xhtml">Dvd Rental</a></p>
                         <p class="fl_right">Made by <a>LajuRex.Co</a></p>
 
                     </div>

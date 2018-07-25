@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+
+        <title>Dvd Rental/Register</title>
+        <link href="resources/style.css" rel="stylesheet" type="text/css" />
+        <style>
+
+            body{
+                background-color: goldenrod;
+            }
+            .words{
+
+                font-size: 20px;
+            }
+            input[type=text], select, textarea {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */  
+                border: 1px solid #ccc; /* Gray border */
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+            }
+
+            /* Style the submit button with a specific background color etc */
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            /* Add a background color and some padding around the form */
+            .form {
+                border-radius: 5px;
+                background-color: darkgoldenrod;
+                padding: 20px;
+            }
+            .tab{
+                border-radius: 5px;
+                background-color: goldenrod;
+                align-self: center; 
+                text-align: center;
+            }
+            body {font-family: Arial, Helvetica, sans-serif;}
+        </style>
+    </h:head>
+
+    <h:body>
+        <div class="header">
+            <a  class="logo">Dvd Rental</a>
+        </div>
+        <div class="topnav" id="myTopnav">
+
+            <a href="index.xhtml" class="active">Home</a>
+            <a href="About.xhtml">About us</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Account 
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Admin</a>
+                    <a href="Register.xhtml">Register</a>
+                    <a href="Sign.xhtml">Sign In</a>
+                </div>
+            </div>
+        </div>
+
+        <h1><center>-Our Mission-</center></h1>
+
+        <h2><center>To Offer The Best Service And Make Our Customers Happy.</center></h2>
+
+        <h1><center>About Us</center></h1>
+        <div class="tab">
+            <center><p class="words">At DvdRental, we all come to work every day because we want to offer our customers the best Movies Quality ,Everyone is guessing Some Users don't know what Movies to Rent, how to identify  the Best Movie quality , or even what to price the Movies are. Advertisers &amp; brands don’t know where their target users are, how to reach them, or even how much they need to spend in order to do so. Investors aren’t sure which Movies and genres are growing the quickest, and where users are really spending their time (and money).
+                    <p class="words">Throughout the history of business, people use data to make more informed decisions. Our mission at DvdRental is to make sure you   enjoy your Movie Experience more. Today we provide the most top Movies &amp; insights in the Movie industry. We want to make you and your family happy as possible to enjoy your Favorite Movies.
+                    </p></p></center>
+        </div>
+
+        <h2><center>Contact Us Below</center></h2>
+        <div class="form">
+            <form>
+
+                <label for="fname"><b>First Name:</b></label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required='true'></input>
+
+                <label for="lname"><b>Last Name :</b></label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required='true'></input>
+
+                <label for="email"><b>Email :</b></label>
+                <input type ="text" placeholder="Enter Email"></input>                  
+
+
+                <label for="subject"><b>Subject</b></label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px" required='true'></textarea>
+
+                <input type="submit" value="Submit"></input>
+
+            </form>
+        </div>
+        <footer>
+            <div class="inner-footer">
+
+                <div class="wrapper row5">
+                    <div id="copyright" class="hoc clear"> 
+
+                        <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="index.xhtml">Dvd Rental</a></p>
+                        <p class="fl_right">Made by <a>LajuRex.Co</a> </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </footer> 
+    </h:body>
+</html>
+
