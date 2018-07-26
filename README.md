@@ -1,2 +1,2 @@
-# DvdRental first  Niitjava project am proud to try
+# DvdRental first  Niit-java project
 
