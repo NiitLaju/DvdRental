@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.config;
+package com.library.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -11,11 +11,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 /**
  *
- * @author VIRUS-X
+ * @author Kelechi
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages="com")
-public class ConfigurationClass {
+@ComponentScan(basePackages="com.library")
+public class ComponentConfig {
     
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.config;
+package com.library.config;
 
 import com.sun.faces.config.FacesInitializer;
 import javax.servlet.ServletContext;
@@ -14,14 +14,14 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 
 /**
  *
- * @author VIRUS-X
+ * @author batman
  */
 public class WebInitializer extends FacesInitializer implements WebApplicationInitializer{
 
     @Override
     public void onStartup(ServletContext sc) throws ServletException {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-        context.register(ConfigurationClass.class);
+        context.register(HibernateConfig.class, ComponentConfig.class);
         sc.addListener(new ContextLoaderListener(context));
     }
     
